@@ -1,0 +1,10 @@
+C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\bin\Debug\InventorySalesSystem.exe.config
+C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\bin\Debug\InventorySalesSystem.exe
+C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\bin\Debug\InventorySalesSystem.pdb
+C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\obj\Debug\InventorySalesSystem.csproj.AssemblyReference.cache
+C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\obj\Debug\InventorySalesSystem.Form1.resources
+C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\obj\Debug\InventorySalesSystem.Properties.Resources.resources
+C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\obj\Debug\InventorySalesSystem.csproj.GenerateResource.cache
+C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\obj\Debug\InventorySalesSystem.csproj.CoreCompileInputs.cache
+C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\obj\Debug\InventorySalesSystem.exe
+C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\obj\Debug\InventorySalesSystem.pdb
