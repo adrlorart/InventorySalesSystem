@@ -19,7 +19,7 @@ namespace InventorySalesSystem
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
 
             string connectionString = @"Server=localhost;Database=InventorySalesDB;Trusted_Connection=True;";
@@ -36,6 +36,18 @@ namespace InventorySalesSystem
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
+
+        }
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            FormClientes formClientes = new FormClientes();
+            formClientes.Show();
+            
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
