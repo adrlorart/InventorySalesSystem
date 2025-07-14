@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace InventorySalesSystem
@@ -23,6 +24,32 @@ namespace InventorySalesSystem
         //config boton guardar
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
+
+            // Validación
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                string.IsNullOrWhiteSpace(txtApellido.Text) ||
+                string.IsNullOrWhiteSpace(txtTelefono.Text))
+            {
+                MessageBox.Show("Los campos Nombre, Apellido y Teléfono son obligatorios.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Verificar que nombre y apellido no tengan números
+            if (txtNombre.Text.Any(char.IsDigit) || txtApellido.Text.Any(char.IsDigit))
+            {
+                MessageBox.Show("El nombre y el apellido no deben contener números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Verificar que el teléfono tenga solo números
+            if (!txtTelefono.Text.All(char.IsDigit))
+            {
+                MessageBox.Show("El campo Teléfono debe contener solo números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+
             ClienteDAL.AgregarCliente(
             txtNombre.Text,
             txtApellido.Text,
@@ -39,6 +66,32 @@ namespace InventorySalesSystem
         {
             if (!string.IsNullOrEmpty(txtId.Text))
             {
+
+                // Validación
+                if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                    string.IsNullOrWhiteSpace(txtApellido.Text) ||
+                    string.IsNullOrWhiteSpace(txtTelefono.Text))
+                {
+                    MessageBox.Show("Los campos Nombre, Apellido y Teléfono son obligatorios.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Verificar que nombre y apellido no tengan números
+                if (txtNombre.Text.Any(char.IsDigit) || txtApellido.Text.Any(char.IsDigit))
+                {
+                    MessageBox.Show("El nombre y el apellido no deben contener números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Verificar que el teléfono tenga solo números
+                if (!txtTelefono.Text.All(char.IsDigit))
+                {
+                    MessageBox.Show("El campo Teléfono debe contener solo números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+
+
                 ClienteDAL.ActualizarCliente(
                     int.Parse(txtId.Text),
                     txtNombre.Text,
@@ -116,6 +169,45 @@ namespace InventorySalesSystem
             txtTelefono.Text = "";
             txtDireccion.Text = "";
         }
+        //validación de caudro de texto para nombre
+        /*private void TxtNombre_Validating(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            //aplicable para todos?
+            // Validación
+            if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
+                string.IsNullOrWhiteSpace(txtApellido.Text) ||
+                string.IsNullOrWhiteSpace(txtTelefono.Text))
+            {
+                MessageBox.Show("Los campos Nombre, Apellido y Teléfono son obligatorios.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            // Verificar que nombre y apellido no tengan números
+            if (txtNombre.Text.Any(char.IsDigit) || txtApellido.Text.Any(char.IsDigit))
+            {
+                MessageBox.Show("El nombre y el apellido no deben contener números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Verificar que el teléfono tenga solo números
+            if (!txtTelefono.Text.All(char.IsDigit))
+            {
+                MessageBox.Show("El campo Teléfono debe contener solo números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            /*if (String.IsNullOrWhiteSpace(txtNombre.Text))
+            {
+                e.Cancel   = true;
+                txtNombre.Focus();
+                errorProvider1.SetError(txtNombre, "Introduce tu nombre");
+
+
+            }
+            else
+            {
+                e.Cancel= false;
+                errorProvider1.SetError(txtNombre, null);
+            }
+        }*/
     }
 }

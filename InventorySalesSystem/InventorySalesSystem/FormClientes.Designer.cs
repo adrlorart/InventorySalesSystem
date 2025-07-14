@@ -29,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,7 +46,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombre
@@ -122,6 +125,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            //this.btnGuardar.Validating += new System.ComponentModel.CancelEventHandler(this.TxtNombre_Validating);
             // 
             // btnActualizar
             // 
@@ -192,6 +196,10 @@
             this.txtId.Visible = false;
             this.txtId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -216,6 +224,7 @@
             this.Name = "FormClientes";
             this.Text = "Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,6 +248,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 
 }
