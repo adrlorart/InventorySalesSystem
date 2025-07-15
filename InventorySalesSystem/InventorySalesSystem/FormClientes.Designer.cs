@@ -232,7 +232,6 @@
             this.MinimumSize = new System.Drawing.Size(520, 500);
             this.Name = "FormClientes";
             this.Text = "Clientes";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

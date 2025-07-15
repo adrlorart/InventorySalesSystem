@@ -46,6 +46,14 @@ namespace InventorySalesSystem
 
         }
 
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            FormProductos formProductos = new FormProductos();
+            formProductos.Show();
+
+
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 

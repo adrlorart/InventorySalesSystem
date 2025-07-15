@@ -13,7 +13,7 @@ namespace InventorySalesSystem
         // Método para Insertar
         public static void AgregarCliente(string nombre, string apellido, string email, string telefono, string direccion)
         {
-            // Aquí va el código SQL INSERT
+            // Código SQL INSERT
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
                 string query = "INSERT INTO Clientes (nombre, apellido, email, telefono, direccion) VALUES (@nombre, @apellido, @email, @telefono, @direccion)";
@@ -30,7 +30,7 @@ namespace InventorySalesSystem
         // Método para Consultar
         public static DataTable ObtenerClientes()
         {
-            // Aquí va el código SQL SELECT
+            // Código SQL SELECT
             DataTable tabla = new DataTable();
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
@@ -44,7 +44,7 @@ namespace InventorySalesSystem
         // Método para Actualizar
         public static void ActualizarCliente(int id_cliente, string nombre, string apellido, string email, string telefono, string direccion)
         {
-            // Aquí va el código SQL UPDATE
+            // Código SQL UPDATE
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
                 string query = "UPDATE Clientes SET nombre=@nombre, apellido=@apellido, email=@email, telefono=@telefono, direccion=@direccion WHERE id_cliente=@id_cliente";
@@ -62,7 +62,7 @@ namespace InventorySalesSystem
         // Método para Eliminar
         public static void EliminarCliente(int id_cliente)
         {
-            // Aquí va el código SQL DELETE
+            // Código SQL DELETE
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
                 string query = "DELETE FROM Clientes WHERE id_cliente=@id_cliente";
