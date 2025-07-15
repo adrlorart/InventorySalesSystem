@@ -29,7 +29,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,22 +45,22 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(187, 28);
+            this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNombre.Location = new System.Drawing.Point(154, 29);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(230, 22);
             this.txtNombre.TabIndex = 0;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(98, 33);
+            this.label1.Location = new System.Drawing.Point(65, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 16);
             this.label1.TabIndex = 1;
@@ -69,8 +68,9 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(98, 61);
+            this.label2.Location = new System.Drawing.Point(65, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 16);
             this.label2.TabIndex = 3;
@@ -79,15 +79,17 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(187, 56);
+            this.txtApellido.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtApellido.Location = new System.Drawing.Point(154, 57);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(230, 22);
             this.txtApellido.TabIndex = 2;
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(98, 89);
+            this.label3.Location = new System.Drawing.Point(65, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 16);
             this.label3.TabIndex = 5;
@@ -95,15 +97,17 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(187, 84);
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmail.Location = new System.Drawing.Point(154, 85);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(230, 22);
             this.txtEmail.TabIndex = 4;
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(98, 117);
+            this.label4.Location = new System.Drawing.Point(65, 118);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 16);
             this.label4.TabIndex = 7;
@@ -111,25 +115,27 @@
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(187, 112);
+            this.txtTelefono.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTelefono.Location = new System.Drawing.Point(154, 113);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(230, 22);
             this.txtTelefono.TabIndex = 6;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(47, 198);
+            this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGuardar.Location = new System.Drawing.Point(14, 199);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(96, 24);
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
-            //this.btnGuardar.Validating += new System.ComponentModel.CancelEventHandler(this.TxtNombre_Validating);
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(416, 198);
+            this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnActualizar.Location = new System.Drawing.Point(383, 199);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(96, 24);
             this.btnActualizar.TabIndex = 9;
@@ -139,7 +145,8 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(172, 198);
+            this.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnEliminar.Location = new System.Drawing.Point(139, 199);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(96, 24);
             this.btnEliminar.TabIndex = 10;
@@ -149,7 +156,8 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(295, 198);
+            this.btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLimpiar.Location = new System.Drawing.Point(262, 199);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(96, 24);
             this.btnLimpiar.TabIndex = 11;
@@ -159,8 +167,9 @@
             // 
             // dgvClientes
             // 
+            this.dgvClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvClientes.Location = new System.Drawing.Point(47, 256);
+            this.dgvClientes.Location = new System.Drawing.Point(14, 257);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 51;
             this.dgvClientes.RowTemplate.Height = 24;
@@ -170,8 +179,9 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(98, 145);
+            this.label5.Location = new System.Drawing.Point(65, 146);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 16);
             this.label5.TabIndex = 14;
@@ -180,15 +190,17 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(187, 140);
+            this.txtDireccion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDireccion.Location = new System.Drawing.Point(154, 141);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(230, 22);
             this.txtDireccion.TabIndex = 13;
             // 
             // txtId
             // 
+            this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtId.Location = new System.Drawing.Point(441, 28);
+            this.txtId.Location = new System.Drawing.Point(408, 29);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(100, 15);
@@ -196,15 +208,11 @@
             this.txtId.Visible = false;
             this.txtId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 450);
+            this.ClientSize = new System.Drawing.Size(502, 453);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDireccion);
@@ -221,10 +229,11 @@
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombre);
+            this.MinimumSize = new System.Drawing.Size(520, 500);
             this.Name = "FormClientes";
             this.Text = "Clientes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,7 +257,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 
 }

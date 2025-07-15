@@ -71,5 +71,37 @@ namespace InventorySalesSystem
                 cmd.ExecuteNonQuery();
             }
         }
+
+        //Metodo para evitar duplicados
+        //en base a nombre y apellido
+        public static bool ExisteClienteNyA(string nombre, string apellido)
+        {
+            using (SqlConnection conn = ConexionBD.ObtenerConexion())
+            {
+                
+                string query = "SELECT COUNT(*) FROM Clientes WHERE nombre = @nombre AND apellido = @apellido";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@nombre", nombre);
+                cmd.Parameters.AddWithValue("@apellido", apellido);
+
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0;
+            }
+        }
+        //en base a telefono
+        public static bool ExisteClienteTel(string telefono)
+        {
+            using (SqlConnection conn = ConexionBD.ObtenerConexion())
+            {
+                
+                string query = "SELECT COUNT(*) FROM Clientes WHERE telefono = @telefono";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@telefono", telefono);
+
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0;
+            }
+        }
+
     }
 }

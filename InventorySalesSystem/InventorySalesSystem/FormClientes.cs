@@ -48,6 +48,19 @@ namespace InventorySalesSystem
                 return;
             }
 
+            // Verificar duplicados por nombre y apellido
+            if (ClienteDAL.ExisteClienteNyA(txtNombre.Text.Trim(), txtApellido.Text.Trim()))
+            {
+                MessageBox.Show("Este cliente ya está registrado.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Verificar duplicado por teléfono
+            if (ClienteDAL.ExisteClienteTel(txtTelefono.Text.Trim()))
+            {
+                MessageBox.Show("Este número ya está registrado.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
 
             ClienteDAL.AgregarCliente(
@@ -90,7 +103,19 @@ namespace InventorySalesSystem
                     return;
                 }
 
+                // Verificar duplicados por nombre y apellido
+                if (ClienteDAL.ExisteClienteNyA(txtNombre.Text.Trim(), txtApellido.Text.Trim()))
+                {
+                    MessageBox.Show("Este cliente ya está registrado.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
+                // Verificar duplicado por teléfono
+                if (ClienteDAL.ExisteClienteTel(txtTelefono.Text.Trim()))
+                {
+                    MessageBox.Show("Este número ya está registrado.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 ClienteDAL.ActualizarCliente(
                     int.Parse(txtId.Text),
@@ -114,13 +139,19 @@ namespace InventorySalesSystem
         //config boton eliminar
 
         private void BtnEliminar_Click(object sender, EventArgs e)
-        {
+        {// Confirmación
+            var confirmResult = MessageBox.Show("¿Estás seguro de que deseas eliminar este cliente?","Confirmar eliminación",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+
+            if (confirmResult == DialogResult.No)
+                    return;//aqui termina el mensaje de confirmacion
+   
             if (!string.IsNullOrEmpty(txtId.Text))
             {
                 ClienteDAL.EliminarCliente(int.Parse(txtId.Text));
                 MessageBox.Show("Cliente eliminado exitosamente.");
                 LimpiarCampos();
                 CargarClientes();
+                
             }
             else
             {
@@ -169,45 +200,6 @@ namespace InventorySalesSystem
             txtTelefono.Text = "";
             txtDireccion.Text = "";
         }
-        //validación de caudro de texto para nombre
-        /*private void TxtNombre_Validating(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            //aplicable para todos?
-            // Validación
-            if (string.IsNullOrWhiteSpace(txtNombre.Text) ||
-                string.IsNullOrWhiteSpace(txtApellido.Text) ||
-                string.IsNullOrWhiteSpace(txtTelefono.Text))
-            {
-                MessageBox.Show("Los campos Nombre, Apellido y Teléfono son obligatorios.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Verificar que nombre y apellido no tengan números
-            if (txtNombre.Text.Any(char.IsDigit) || txtApellido.Text.Any(char.IsDigit))
-            {
-                MessageBox.Show("El nombre y el apellido no deben contener números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            // Verificar que el teléfono tenga solo números
-            if (!txtTelefono.Text.All(char.IsDigit))
-            {
-                MessageBox.Show("El campo Teléfono debe contener solo números.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-            /*if (String.IsNullOrWhiteSpace(txtNombre.Text))
-            {
-                e.Cancel   = true;
-                txtNombre.Focus();
-                errorProvider1.SetError(txtNombre, "Introduce tu nombre");
-
-
-            }
-            else
-            {
-                e.Cancel= false;
-                errorProvider1.SetError(txtNombre, null);
-            }
-        }*/
+        
     }
 }

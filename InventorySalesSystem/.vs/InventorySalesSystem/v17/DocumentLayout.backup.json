@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|c:\\users\\adril\\documents\\cv\\inventorysalessystem\\inventorysalessystem\\inventorysalessystem\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\inventorysalessystem\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|solutionrelative:inventorysalessystem\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\inventorysalessystem\\clientedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|solutionrelative:inventorysalessystem\\clientedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|c:\\users\\adril\\documents\\cv\\inventorysalessystem\\inventorysalessystem\\inventorysalessystem\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|solutionrelative:inventorysalessystem\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\inventorysalessystem\\formclientes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|solutionrelative:inventorysalessystem\\formclientes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\inventorysalessystem\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|solutionrelative:inventorysalessystem\\formclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|c:\\users\\adril\\documents\\cv\\inventorysalessystem\\inventorysalessystem\\inventorysalessystem\\clientedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E80B72-AD05-459A-A580-FD4CB2683C10}|InventorySalesSystem\\InventorySalesSystem.csproj|solutionrelative:inventorysalessystem\\clientedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ClienteDAL.cs",
+              "DocumentMoniker": "C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\InventorySalesSystem\\ClienteDAL.cs",
+              "RelativeDocumentMoniker": "InventorySalesSystem\\ClienteDAL.cs",
+              "ToolTip": "C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\InventorySalesSystem\\ClienteDAL.cs",
+              "RelativeToolTip": "InventorySalesSystem\\ClienteDAL.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAcwGUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T23:28:27.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormClientes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\InventorySalesSystem\\FormClientes.cs",
               "RelativeDocumentMoniker": "InventorySalesSystem\\FormClientes.cs",
@@ -42,26 +55,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClienteDAL.cs",
-              "DocumentMoniker": "C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\InventorySalesSystem\\ClienteDAL.cs",
-              "RelativeDocumentMoniker": "InventorySalesSystem\\ClienteDAL.cs",
-              "ToolTip": "C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\InventorySalesSystem\\ClienteDAL.cs",
-              "RelativeToolTip": "InventorySalesSystem\\ClienteDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T15:05:57.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "FormClientes.Designer.cs",
               "DocumentMoniker": "C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\InventorySalesSystem\\FormClientes.Designer.cs",
               "RelativeDocumentMoniker": "InventorySalesSystem\\FormClientes.Designer.cs",
               "ToolTip": "C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\InventorySalesSystem\\FormClientes.Designer.cs",
               "RelativeToolTip": "InventorySalesSystem\\FormClientes.Designer.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAASwH8AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAASwIUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T13:57:14.888Z",
               "EditorCaption": ""
@@ -74,7 +74,7 @@
               "RelativeDocumentMoniker": "InventorySalesSystem\\FormClientes.cs",
               "ToolTip": "C:\\Users\\adril\\Documents\\CV\\InventorySalesSystem\\InventorySalesSystem\\InventorySalesSystem\\FormClientes.cs",
               "RelativeToolTip": "InventorySalesSystem\\FormClientes.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAmwL4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAADwv30AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T16:25:21.766Z",
               "EditorCaption": ""
