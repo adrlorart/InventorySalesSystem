@@ -42,38 +42,43 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
+            this.txtId_producto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(208, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 16);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre:";
+            this.label1.Text = "* Nombre:";
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(208, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 16);
+            this.label2.Size = new System.Drawing.Size(77, 16);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Categoría:";
+            this.label2.Text = "* Categoría:";
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(208, 117);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 16);
+            this.label3.Size = new System.Drawing.Size(90, 16);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Descripción:";
+            this.label3.Text = "* Descripción:";
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(208, 151);
             this.label4.Name = "label4";
@@ -83,6 +88,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(208, 184);
             this.label5.Name = "label5";
@@ -92,6 +98,7 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNombre.Location = new System.Drawing.Point(273, 51);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(322, 22);
@@ -99,6 +106,7 @@
             // 
             // txtCategoria
             // 
+            this.txtCategoria.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCategoria.Location = new System.Drawing.Point(283, 80);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(312, 22);
@@ -106,6 +114,7 @@
             // 
             // txtDescrip
             // 
+            this.txtDescrip.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDescrip.Location = new System.Drawing.Point(296, 114);
             this.txtDescrip.Name = "txtDescrip";
             this.txtDescrip.Size = new System.Drawing.Size(299, 22);
@@ -113,6 +122,7 @@
             // 
             // txtPrecio_unit
             // 
+            this.txtPrecio_unit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPrecio_unit.Location = new System.Drawing.Point(331, 151);
             this.txtPrecio_unit.Name = "txtPrecio_unit";
             this.txtPrecio_unit.Size = new System.Drawing.Size(264, 22);
@@ -120,6 +130,7 @@
             // 
             // txtExist
             // 
+            this.txtExist.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtExist.Location = new System.Drawing.Point(292, 181);
             this.txtExist.Name = "txtExist";
             this.txtExist.Size = new System.Drawing.Size(303, 22);
@@ -127,33 +138,40 @@
             // 
             // btnGuardar
             // 
+            this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnGuardar.Location = new System.Drawing.Point(46, 237);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(116, 23);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Añadir producto";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // btnEliminar
             // 
+            this.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEliminar.Location = new System.Drawing.Point(332, 237);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(138, 23);
             this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Eliminar producto";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // btnActualizar
             // 
+            this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnActualizar.Location = new System.Drawing.Point(615, 237);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(133, 23);
             this.btnActualizar.TabIndex = 12;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
             // dgvProductos
             // 
+            this.dgvProductos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductos.Location = new System.Drawing.Point(46, 277);
             this.dgvProductos.Name = "dgvProductos";
@@ -161,12 +179,25 @@
             this.dgvProductos.RowTemplate.Height = 24;
             this.dgvProductos.Size = new System.Drawing.Size(702, 161);
             this.dgvProductos.TabIndex = 13;
+            this.dgvProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvProductos_CellClick);
+            // 
+            // txtId_producto
+            // 
+            this.txtId_producto.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtId_producto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtId_producto.Location = new System.Drawing.Point(644, 54);
+            this.txtId_producto.Name = "txtId_producto";
+            this.txtId_producto.ReadOnly = true;
+            this.txtId_producto.Size = new System.Drawing.Size(100, 15);
+            this.txtId_producto.TabIndex = 14;
+            this.txtId_producto.Visible = false;
             // 
             // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtId_producto);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnEliminar);
@@ -181,6 +212,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(818, 497);
             this.Name = "FormProductos";
             this.Text = "Productos";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
@@ -205,5 +237,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.DataGridView dgvProductos;
+        private System.Windows.Forms.TextBox txtId_producto;
     }
 }
