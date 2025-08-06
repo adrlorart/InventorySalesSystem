@@ -43,6 +43,8 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.txtId_producto = new System.Windows.Forms.TextBox();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(208, 54);
+            this.label1.Location = new System.Drawing.Point(187, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 0;
@@ -60,7 +62,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(208, 83);
+            this.label2.Location = new System.Drawing.Point(187, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 16);
             this.label2.TabIndex = 1;
@@ -70,7 +72,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(208, 117);
+            this.label3.Location = new System.Drawing.Point(187, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 16);
             this.label3.TabIndex = 2;
@@ -80,7 +82,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(208, 151);
+            this.label4.Location = new System.Drawing.Point(187, 151);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 16);
             this.label4.TabIndex = 3;
@@ -90,7 +92,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(208, 184);
+            this.label5.Location = new System.Drawing.Point(187, 184);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 16);
             this.label5.TabIndex = 4;
@@ -139,9 +141,9 @@
             // btnGuardar
             // 
             this.btnGuardar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnGuardar.Location = new System.Drawing.Point(46, 237);
+            this.btnGuardar.Location = new System.Drawing.Point(46, 225);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(116, 23);
+            this.btnGuardar.Size = new System.Drawing.Size(116, 36);
             this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "Añadir producto";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -150,9 +152,9 @@
             // btnEliminar
             // 
             this.btnEliminar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnEliminar.Location = new System.Drawing.Point(332, 237);
+            this.btnEliminar.Location = new System.Drawing.Point(219, 225);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(138, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(138, 36);
             this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "Eliminar producto";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -161,9 +163,9 @@
             // btnActualizar
             // 
             this.btnActualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnActualizar.Location = new System.Drawing.Point(615, 237);
+            this.btnActualizar.Location = new System.Drawing.Point(615, 225);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(133, 23);
+            this.btnActualizar.Size = new System.Drawing.Size(133, 36);
             this.btnActualizar.TabIndex = 12;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -191,12 +193,36 @@
             this.txtId_producto.Size = new System.Drawing.Size(100, 15);
             this.txtId_producto.TabIndex = 14;
             this.txtId_producto.Visible = false;
+            this.txtId_producto.TextChanged += new System.EventHandler(this.txtId_producto_TextChanged);
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.Location = new System.Drawing.Point(12, 12);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(94, 32);
+            this.btnRegresar.TabIndex = 15;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLimpiar.Location = new System.Drawing.Point(416, 225);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(138, 36);
+            this.btnLimpiar.TabIndex = 16;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.txtId_producto);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.btnActualizar);
@@ -238,5 +264,7 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.TextBox txtId_producto;
+        private System.Windows.Forms.Button btnRegresar;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

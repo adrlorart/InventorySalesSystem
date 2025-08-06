@@ -41,7 +41,7 @@ namespace InventorySalesSystem
         private void Button2_Click(object sender, EventArgs e)
         {
             FormClientes formClientes = new FormClientes();
-            formClientes.Show();
+            formClientes.ShowDialog();
             
 
         }
@@ -49,7 +49,7 @@ namespace InventorySalesSystem
         private void Button3_Click(object sender, EventArgs e)
         {
             FormProductos formProductos = new FormProductos();
-            formProductos.Show();
+            formProductos.ShowDialog();
 
 
         }

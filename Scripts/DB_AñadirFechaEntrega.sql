@@ -1,0 +1,6 @@
+USE InventorySalesDB;
+ALTER TABLE Ventas
+ADD CONSTRAINT DF_Ventas_Fecha DEFAULT GETDATE() FOR fecha;
+
+ALTER TABLE Ventas
+ADD fecha_entrega DATETIME NULL;

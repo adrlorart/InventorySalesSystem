@@ -79,7 +79,7 @@ namespace InventorySalesSystem
             precio_unit,
             exist);
 
-            MessageBox.Show("Cliente agregado exitosamente.");
+            MessageBox.Show("Producto agregado exitosamente.");
             LimpiarCampos();
             CargarProductos();
         }
@@ -207,6 +207,20 @@ namespace InventorySalesSystem
             txtExist.Text = "";
         }
 
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtId_producto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+        }
     }
     
 }
