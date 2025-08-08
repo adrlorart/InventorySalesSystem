@@ -31,6 +31,16 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cbBoxCliente = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cbBoxProducto = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.dgvVenta = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5Total = new System.Windows.Forms.Label();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegresar
@@ -61,16 +71,107 @@
             this.cbBoxCliente.TabIndex = 2;
             this.cbBoxCliente.SelectedIndexChanged += new System.EventHandler(this.cbBoxCliente_SelectedIndexChanged);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(169, 111);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Producto";
+            // 
+            // cbBoxProducto
+            // 
+            this.cbBoxProducto.FormattingEnabled = true;
+            this.cbBoxProducto.Location = new System.Drawing.Point(270, 104);
+            this.cbBoxProducto.Name = "cbBoxProducto";
+            this.cbBoxProducto.Size = new System.Drawing.Size(194, 24);
+            this.cbBoxProducto.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(169, 147);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 16);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Cantidad: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Location = new System.Drawing.Point(270, 144);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(100, 22);
+            this.txtCantidad.TabIndex = 6;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(389, 140);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 30);
+            this.btnAgregar.TabIndex = 7;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            // 
+            // dgvVenta
+            // 
+            this.dgvVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvVenta.Location = new System.Drawing.Point(68, 237);
+            this.dgvVenta.Name = "dgvVenta";
+            this.dgvVenta.RowHeadersWidth = 51;
+            this.dgvVenta.RowTemplate.Height = 24;
+            this.dgvVenta.Size = new System.Drawing.Size(617, 172);
+            this.dgvVenta.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(169, 184);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 16);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Total:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5Total
+            // 
+            this.label5Total.AutoSize = true;
+            this.label5Total.Location = new System.Drawing.Point(267, 184);
+            this.label5Total.Name = "label5Total";
+            this.label5Total.Size = new System.Drawing.Size(44, 16);
+            this.label5Total.TabIndex = 10;
+            this.label5Total.Text = "label5";
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.Location = new System.Drawing.Point(707, 242);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(75, 33);
+            this.btnRegistrar.TabIndex = 11;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = true;
+            // 
             // FormVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRegistrar);
+            this.Controls.Add(this.label5Total);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.dgvVenta);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.cbBoxProducto);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.cbBoxCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegresar);
             this.Name = "FormVentas";
             this.Text = "Ventas";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -81,5 +182,14 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbBoxCliente;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbBoxProducto;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.DataGridView dgvVenta;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5Total;
+        private System.Windows.Forms.Button btnRegistrar;
     }
 }
