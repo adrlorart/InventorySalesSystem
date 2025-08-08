@@ -175,6 +175,7 @@
             this.Controls.Add(this.btnRegresar);
             this.Name = "FormVentas";
             this.Text = "Ventas";
+            this.Load += new System.EventHandler(this.FormVentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

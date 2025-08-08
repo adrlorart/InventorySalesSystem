@@ -104,10 +104,10 @@ namespace InventorySalesSystem
 
         public static int ObtenerExistencias(int id_producto)
         {
-            int existencias = 0;
+            int exist = 0;
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
-                string query = "SELECT Existencias FROM Productos WHERE id_producto = @id_productoo";
+                string query = "SELECT exist FROM Productos WHERE id_producto = @id_producto";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@id_producto", id_producto);
 
@@ -115,10 +115,10 @@ namespace InventorySalesSystem
                 object result = cmd.ExecuteScalar();
                 if (result != null)
                 {
-                    existencias = Convert.ToInt32(result);
+                    exist = Convert.ToInt32(result);
                 }
             }
-            return existencias;
+            return exist;
         }
 
 
