@@ -33,6 +33,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LabelMensajeInicio = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
+            this.btnVenta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,12 +87,23 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
+            // btnVenta
+            // 
+            this.btnVenta.Location = new System.Drawing.Point(463, 415);
+            this.btnVenta.Name = "btnVenta";
+            this.btnVenta.Size = new System.Drawing.Size(140, 25);
+            this.btnVenta.TabIndex = 5;
+            this.btnVenta.Text = "Añadir Venta";
+            this.btnVenta.UseVisualStyleBackColor = true;
+            this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVenta);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.LabelMensajeInicio);
             this.Controls.Add(this.pictureBox1);
@@ -113,6 +125,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label LabelMensajeInicio;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnVenta;
     }
 }
 

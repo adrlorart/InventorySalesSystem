@@ -87,6 +87,40 @@ namespace InventorySalesSystem
             }
         }
 
+        // Método para obtener el precio de un producto por su ID
+        public static decimal ObtenerPrecio(int id_producto)
+        {
+            using (SqlConnection conn = ConexionBD.ObtenerConexion())
+            {
+                conn.Open();
+                string query = "SELECT precio_unit FROM Productos WHERE id_producto = @id_producto";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id_producto", id_producto);
+                    return Convert.ToDecimal(cmd.ExecuteScalar());
+                }
+            }
+        }
+
+        public static int ObtenerExistencias(int id_producto)
+        {
+            int existencias = 0;
+            using (SqlConnection conn = ConexionBD.ObtenerConexion())
+            {
+                string query = "SELECT Existencias FROM Productos WHERE id_producto = @id_productoo";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@id_producto", id_producto);
+
+                conn.Open();
+                object result = cmd.ExecuteScalar();
+                if (result != null)
+                {
+                    existencias = Convert.ToInt32(result);
+                }
+            }
+            return existencias;
+        }
+
 
     }
 }

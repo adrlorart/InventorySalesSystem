@@ -87,6 +87,7 @@
             this.cbBoxProducto.Name = "cbBoxProducto";
             this.cbBoxProducto.Size = new System.Drawing.Size(194, 24);
             this.cbBoxProducto.TabIndex = 4;
+            this.cbBoxProducto.SelectedIndexChanged += new System.EventHandler(this.cbBoxProducto_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -113,16 +114,18 @@
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // dgvVenta
             // 
             this.dgvVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvVenta.Location = new System.Drawing.Point(68, 237);
+            this.dgvVenta.Location = new System.Drawing.Point(41, 237);
             this.dgvVenta.Name = "dgvVenta";
             this.dgvVenta.RowHeadersWidth = 51;
             this.dgvVenta.RowTemplate.Height = 24;
             this.dgvVenta.Size = new System.Drawing.Size(617, 172);
             this.dgvVenta.TabIndex = 8;
+            this.dgvVenta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVenta_CellContentClick);
             // 
             // label4
             // 
@@ -145,12 +148,13 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(707, 242);
+            this.btnRegistrar.Location = new System.Drawing.Point(691, 237);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(75, 33);
+            this.btnRegistrar.Size = new System.Drawing.Size(81, 33);
             this.btnRegistrar.TabIndex = 11;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // FormVentas
             // 
