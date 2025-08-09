@@ -38,11 +38,10 @@ namespace InventorySalesSystem
         {
             try
             {
-                if (cbBoxProducto.SelectedItem is KeyValuePair<int, string> seleccionado &&
-                    int.TryParse(txtCantidad.Text, out int cantidad) && cantidad > 0)
+                if (cbBoxProducto.SelectedValue != null && int.TryParse(txtCantidad.Text, out int cantidad) && cantidad > 0)
                 {
-                    int id_producto = seleccionado.Key;
-                    string nombre = seleccionado.Value;
+                    int id_producto = Convert.ToInt32(cbBoxProducto.SelectedValue);
+                    string nombre = cbBoxProducto.Text;
                     decimal precio_unit = ProductoDAL.ObtenerPrecio(id_producto);
                     int exist = ProductoDAL.ObtenerExistencias(id_producto);
 
@@ -51,12 +50,11 @@ namespace InventorySalesSystem
                         MessageBox.Show("No hay suficientes existencias.");
                         return;
                     }
-
+                    dgvVenta.Rows.Add(nombre, precio_unit, cantidad, precio_unit * cantidad);
                     listaVenta.Add((id_producto, nombre, precio_unit, cantidad));
                     totalVenta += precio_unit * cantidad;
-
-                    dgvVenta.Rows.Add(nombre, precio_unit, cantidad, precio_unit * cantidad);
                     label5Total.Text = $"Total: ${totalVenta:F2}";
+                    
                 }
                 else
                 {
@@ -90,12 +88,12 @@ namespace InventorySalesSystem
                     VentasDAL.ValidarExistencias(item.id_producto, item.cantidad);
                 }
 
-                int idCliente = Convert.ToInt32(cbBoxCliente.SelectedValue);
-                int idVenta = VentasDAL.AgregarVenta(idCliente, totalVenta, null);
+                int id_cliente = Convert.ToInt32(cbBoxCliente.SelectedValue);
+                int id_venta = VentasDAL.AgregarVenta(id_cliente, totalVenta, null);
 
                 foreach (var item in listaVenta)
                 {
-                    VentasDAL.AgregarDetalleVenta(idVenta, item.id_producto, item.cantidad, item.precio);
+                    VentasDAL.AgregarDetalleVenta(id_venta, item.id_producto, item.cantidad, item.precio);
                     VentasDAL.ActualizarExistencias(item.id_producto, item.cantidad);
                 }
 
