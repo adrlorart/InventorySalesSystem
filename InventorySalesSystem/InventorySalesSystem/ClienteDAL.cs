@@ -16,6 +16,7 @@ namespace InventorySalesSystem
             // Código SQL INSERT
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
+                conn.Open();
                 string query = "INSERT INTO Clientes (nombre, apellido, email, telefono, direccion) VALUES (@nombre, @apellido, @email, @telefono, @direccion)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@nombre", nombre);
@@ -34,6 +35,7 @@ namespace InventorySalesSystem
             DataTable tabla = new DataTable();
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
+                conn.Open();
                 string query = "SELECT id_cliente, nombre, apellido, email, telefono, direccion FROM Clientes";
                 SqlDataAdapter da = new SqlDataAdapter(query, conn);
                 da.Fill(tabla);
@@ -47,6 +49,7 @@ namespace InventorySalesSystem
             // Código SQL UPDATE
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
+                conn.Open();
                 string query = "UPDATE Clientes SET nombre=@nombre, apellido=@apellido, email=@email, telefono=@telefono, direccion=@direccion WHERE id_cliente=@id_cliente";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@nombre", nombre);
@@ -65,6 +68,7 @@ namespace InventorySalesSystem
             // Código SQL DELETE
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
+                conn.Open();
                 string query = "DELETE FROM Clientes WHERE id_cliente=@id_cliente";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@id_cliente", id_cliente);
@@ -78,7 +82,7 @@ namespace InventorySalesSystem
         {
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
-                
+                conn.Open();
                 string query = "SELECT COUNT(*) FROM Clientes WHERE nombre = @nombre AND apellido = @apellido";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@nombre", nombre);
@@ -93,7 +97,7 @@ namespace InventorySalesSystem
         {
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
-                
+                conn.Open();
                 string query = "SELECT COUNT(*) FROM Clientes WHERE telefono = @telefono";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@telefono", telefono);

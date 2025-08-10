@@ -23,6 +23,7 @@ namespace InventorySalesSystem
 
         private void FormVentas_Load(object sender, EventArgs e)
         {
+            ConfigurarGrid();
             CargarClientes();
             CargarProductos();
         }
@@ -126,6 +127,16 @@ namespace InventorySalesSystem
             cbBoxProducto.ValueMember = "id_producto";
         }
 
+        private void ConfigurarGrid()
+        {
+            dgvVenta.Columns.Clear();
+            dgvVenta.AutoGenerateColumns = false;
+
+            dgvVenta.Columns.Add("producto", "Producto");
+            dgvVenta.Columns.Add("precio_unit", "Precio unitario");
+            dgvVenta.Columns.Add("cantidad", "Cantidad");
+            dgvVenta.Columns.Add("total", "Total");
+        }
 
 
 

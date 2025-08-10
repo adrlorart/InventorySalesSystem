@@ -14,7 +14,7 @@ namespace InventorySalesSystem
         public static SqlConnection ObtenerConexion()
         {
             SqlConnection conexion = new SqlConnection(cadenaConexion);
-            conexion.Open();
+            
             return conexion;
         }
     }

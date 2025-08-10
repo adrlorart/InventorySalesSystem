@@ -37,7 +37,6 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dgvVenta = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5Total = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
@@ -127,24 +126,13 @@
             this.dgvVenta.TabIndex = 8;
             this.dgvVenta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVenta_CellContentClick);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(169, 184);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 16);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Total:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
             // label5Total
             // 
             this.label5Total.AutoSize = true;
             this.label5Total.Location = new System.Drawing.Point(267, 184);
             this.label5Total.Name = "label5Total";
-            this.label5Total.Size = new System.Drawing.Size(44, 16);
+            this.label5Total.Size = new System.Drawing.Size(0, 16);
             this.label5Total.TabIndex = 10;
-            this.label5Total.Text = "label5";
             // 
             // btnRegistrar
             // 
@@ -163,7 +151,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.label5Total);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvVenta);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtCantidad);
@@ -193,7 +180,6 @@
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.DataGridView dgvVenta;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5Total;
         private System.Windows.Forms.Button btnRegistrar;
     }

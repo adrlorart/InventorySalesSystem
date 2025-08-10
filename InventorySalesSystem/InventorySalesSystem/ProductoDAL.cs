@@ -16,6 +16,7 @@ namespace InventorySalesSystem
             // Código SQL INSERT
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
+                conn.Open();
                 string query = "INSERT INTO Productos (nombre, categoria, descrip, precio_unit, exist) VALUES (@nombre, @categoria, @descrip, @precio_unit, @exist)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@nombre", nombre);
@@ -34,6 +35,7 @@ namespace InventorySalesSystem
             DataTable tabla = new DataTable();
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
+                conn.Open();
                 string query = "SELECT id_producto, nombre, categoria, descrip, precio_unit, exist FROM Productos";
                 SqlDataAdapter da = new SqlDataAdapter(query, conn);
                 da.Fill(tabla);
@@ -47,6 +49,7 @@ namespace InventorySalesSystem
             // Código SQL UPDATE
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
+                conn.Open();
                 string query = "UPDATE Productos SET nombre=@nombre, categoria=@categoria, descrip=@descrip, precio_unit=@precio_unit, exist=@exist WHERE id_producto=@id_producto";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@nombre", nombre);
@@ -65,6 +68,7 @@ namespace InventorySalesSystem
             // Código SQL DELETE
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
+                conn.Open();
                 string query = "DELETE FROM Productos WHERE id_producto=@id_prducto";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@id_producto", id_producto);
@@ -77,7 +81,7 @@ namespace InventorySalesSystem
         {
             using (SqlConnection conn = ConexionBD.ObtenerConexion())
             {
-
+                conn.Open();
                 string query = "SELECT COUNT(*) FROM Productos WHERE nombre = @nombre";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@nombre", nombre);
