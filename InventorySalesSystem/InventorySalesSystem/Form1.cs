@@ -69,5 +69,10 @@ namespace InventorySalesSystem
             FormVentas formVentas = new FormVentas();
             formVentas.ShowDialog();
         }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
     }
 }
