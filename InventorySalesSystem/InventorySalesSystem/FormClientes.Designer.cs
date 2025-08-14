@@ -45,7 +45,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
-            this.btnRegresar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -217,22 +216,11 @@
             this.txtId.Visible = false;
             this.txtId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Location = new System.Drawing.Point(12, 12);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(94, 32);
-            this.btnRegresar.TabIndex = 16;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
             // FormClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(721, 453);
-            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtDireccion);
@@ -252,6 +240,7 @@
             this.MinimumSize = new System.Drawing.Size(520, 500);
             this.Name = "FormClientes";
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.FormClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -276,7 +265,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtId;
-        private System.Windows.Forms.Button btnRegresar;
     }
 
 }

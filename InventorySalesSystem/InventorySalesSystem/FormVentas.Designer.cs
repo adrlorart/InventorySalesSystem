@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cbBoxCliente = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,16 +40,6 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Location = new System.Drawing.Point(12, 12);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(94, 32);
-            this.btnRegresar.TabIndex = 0;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // label1
             // 
@@ -159,7 +148,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbBoxCliente);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnRegresar);
             this.Name = "FormVentas";
             this.Text = "Ventas";
             this.Load += new System.EventHandler(this.FormVentas_Load);
@@ -170,8 +158,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbBoxCliente;
         private System.Windows.Forms.Label label2;

@@ -28,12 +28,7 @@ namespace InventorySalesSystem
             CargarProductos();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        
+               
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {

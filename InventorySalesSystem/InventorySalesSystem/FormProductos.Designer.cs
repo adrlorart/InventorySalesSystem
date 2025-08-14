@@ -43,7 +43,6 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.txtId_producto = new System.Windows.Forms.TextBox();
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.SuspendLayout();
@@ -195,16 +194,6 @@
             this.txtId_producto.Visible = false;
             this.txtId_producto.TextChanged += new System.EventHandler(this.txtId_producto_TextChanged);
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Location = new System.Drawing.Point(12, 12);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(94, 32);
-            this.btnRegresar.TabIndex = 15;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
-            // 
             // btnLimpiar
             // 
             this.btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -222,7 +211,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.txtId_producto);
             this.Controls.Add(this.dgvProductos);
             this.Controls.Add(this.btnActualizar);
@@ -241,6 +229,7 @@
             this.MinimumSize = new System.Drawing.Size(818, 497);
             this.Name = "FormProductos";
             this.Text = "Productos";
+            this.Load += new System.EventHandler(this.FormProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -264,7 +253,6 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.DataGridView dgvProductos;
         private System.Windows.Forms.TextBox txtId_producto;
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnLimpiar;
     }
 }

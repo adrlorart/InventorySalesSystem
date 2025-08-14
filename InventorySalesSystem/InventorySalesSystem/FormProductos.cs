@@ -207,10 +207,7 @@ namespace InventorySalesSystem
             txtExist.Text = "";
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
 
         private void txtId_producto_TextChanged(object sender, EventArgs e)
         {
@@ -220,6 +217,11 @@ namespace InventorySalesSystem
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
+        }
+
+        private void FormProductos_Load(object sender, EventArgs e)
+        {
+
         }
     }
     

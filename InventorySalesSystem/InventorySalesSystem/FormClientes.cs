@@ -201,11 +201,7 @@ namespace InventorySalesSystem
             txtDireccion.Text = "";
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        
         private void txtApellido_TextChanged(object sender, EventArgs e)
         {
 
@@ -242,6 +238,11 @@ namespace InventorySalesSystem
         }
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormClientes_Load(object sender, EventArgs e)
         {
 
         }

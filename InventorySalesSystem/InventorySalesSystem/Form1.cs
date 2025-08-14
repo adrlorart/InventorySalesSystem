@@ -40,16 +40,15 @@ namespace InventorySalesSystem
         }
         private void Button2_Click(object sender, EventArgs e)
         {
-            FormClientes formClientes = new FormClientes();
-            formClientes.ShowDialog();
+            OpenChildForm(new FormClientes());
+            
             
 
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            FormProductos formProductos = new FormProductos();
-            formProductos.ShowDialog();
+            OpenChildForm(new FormProductos());
 
 
         }
@@ -66,13 +65,37 @@ namespace InventorySalesSystem
 
         private void btnVenta_Click(object sender, EventArgs e)
         {
-            FormVentas formVentas = new FormVentas();
-            formVentas.ShowDialog();
+            OpenChildForm(new FormVentas());
         }
 
         private void panelMenu_Paint(object sender, PaintEventArgs e)
         {
             
+        }
+
+        private void OpenChildForm(Form childForm)
+        {
+            OpenChildForm(childForm, ActiveMdiChild);
+        }
+
+        private void OpenChildForm(Form childForm, Form activeMdiChild)
+        {
+            // Cerrar el formulario hijo actual si existe
+            if (this.ActiveMdiChild != null)
+            {
+                this.ActiveMdiChild.Close();
+            }
+
+            activeMdiChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.panelDesktop.Controls.Add(childForm);
+            this.panelDesktop.Tag = childForm;
+            // Mostrar el formulario hijo
+            childForm.BringToFront();
+            childForm.Show();
+            lblHome.Text = childForm.Text;
         }
     }
 }
