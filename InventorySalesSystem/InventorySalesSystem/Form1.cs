@@ -97,5 +97,15 @@ namespace InventorySalesSystem
             childForm.Show();
             lblHome.Text = childForm.Text;
         }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblHome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
