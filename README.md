@@ -38,6 +38,8 @@ Aplicación de escritorio en C# (.NET WinForms) para el manejo de productos, cli
   ![Pantalla-clientes](./Img/Capturas-de-pantalla/Pantalla-clientes.png)
 
 
+Actualmente se siguen haciendo cambios en el apartado de ventas, a esto se debe que no muestre esa pantalla
+
 ## Author
 Adriana Loredo
 
