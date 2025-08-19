@@ -125,7 +125,7 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 6);
+            this.label1.Location = new System.Drawing.Point(32, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 0;
@@ -136,7 +136,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 34);
+            this.label2.Location = new System.Drawing.Point(27, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 16);
             this.label2.TabIndex = 1;
@@ -145,7 +145,7 @@
             // txtNombre
             // 
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(125, 3);
+            this.txtNombre.Location = new System.Drawing.Point(130, 8);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(461, 22);
             this.txtNombre.TabIndex = 5;
@@ -155,14 +155,18 @@
             this.dgvProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvProductos.ColumnHeadersHeight = 29;
+            this.dgvProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProductos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvProductos.BackgroundColor = System.Drawing.Color.Linen;
+            this.dgvProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dgvProductos, 2);
-            this.dgvProductos.Location = new System.Drawing.Point(8, 154);
+            this.dgvProductos.Location = new System.Drawing.Point(8, 164);
             this.dgvProductos.Margin = new System.Windows.Forms.Padding(5);
             this.dgvProductos.Name = "dgvProductos";
             this.dgvProductos.RowHeadersWidth = 51;
             this.dgvProductos.RowTemplate.Height = 24;
-            this.dgvProductos.Size = new System.Drawing.Size(795, 333);
+            this.dgvProductos.Size = new System.Drawing.Size(795, 323);
             this.dgvProductos.TabIndex = 13;
             this.dgvProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvProductos_CellClick);
             this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
@@ -170,7 +174,7 @@
             // txtCategoria
             // 
             this.txtCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCategoria.Location = new System.Drawing.Point(125, 31);
+            this.txtCategoria.Location = new System.Drawing.Point(130, 36);
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(461, 22);
             this.txtCategoria.TabIndex = 6;
@@ -178,7 +182,7 @@
             // txtDescrip
             // 
             this.txtDescrip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescrip.Location = new System.Drawing.Point(125, 59);
+            this.txtDescrip.Location = new System.Drawing.Point(130, 64);
             this.txtDescrip.Name = "txtDescrip";
             this.txtDescrip.Size = new System.Drawing.Size(461, 22);
             this.txtDescrip.TabIndex = 7;
@@ -187,7 +191,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 90);
+            this.label4.Location = new System.Drawing.Point(8, 95);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 16);
             this.label4.TabIndex = 3;
@@ -196,7 +200,7 @@
             // txtPrecio_unit
             // 
             this.txtPrecio_unit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPrecio_unit.Location = new System.Drawing.Point(125, 87);
+            this.txtPrecio_unit.Location = new System.Drawing.Point(130, 92);
             this.txtPrecio_unit.Name = "txtPrecio_unit";
             this.txtPrecio_unit.Size = new System.Drawing.Size(461, 22);
             this.txtPrecio_unit.TabIndex = 8;
@@ -205,7 +209,7 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(22, 118);
+            this.label5.Location = new System.Drawing.Point(27, 123);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 16);
             this.label5.TabIndex = 4;
@@ -215,7 +219,7 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 62);
+            this.label3.Location = new System.Drawing.Point(21, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 16);
             this.label3.TabIndex = 2;
@@ -224,7 +228,7 @@
             // txtExist
             // 
             this.txtExist.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtExist.Location = new System.Drawing.Point(125, 115);
+            this.txtExist.Location = new System.Drawing.Point(130, 120);
             this.txtExist.Name = "txtExist";
             this.txtExist.Size = new System.Drawing.Size(461, 22);
             this.txtExist.TabIndex = 9;
@@ -272,20 +276,21 @@
             this.tableLayoutPanel2.Controls.Add(this.txtDescrip, 1, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 6);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.Padding = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(589, 140);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(599, 150);
             this.tableLayoutPanel2.TabIndex = 19;
             // 
             // txtId_producto
             // 
             this.txtId_producto.BackColor = System.Drawing.SystemColors.Window;
             this.txtId_producto.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtId_producto.Location = new System.Drawing.Point(601, 6);
+            this.txtId_producto.Location = new System.Drawing.Point(611, 6);
             this.txtId_producto.Name = "txtId_producto";
             this.txtId_producto.ReadOnly = true;
             this.txtId_producto.Size = new System.Drawing.Size(100, 22);

@@ -50,6 +50,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Probar Conexion";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
@@ -145,6 +146,7 @@
             // 
             // lblHome
             // 
+            this.lblHome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHome.AutoSize = true;
             this.lblHome.Font = new System.Drawing.Font("Comic Sans MS", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHome.ForeColor = System.Drawing.Color.White;
