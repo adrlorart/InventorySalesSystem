@@ -1,18 +1,18 @@
 # InventorySalesSystem
 
-Desktop application built in C# (.NET WinForms) to manage products, clients, sales and inventory with SQL Server integration.
+Aplicación de escritorio en C# (.NET WinForms) para el manejo de productos, clientes, ventas e inventario con integración en SQL Server.
 
-## Features
-- Product management (CRUD)
-- Client management (CRUD)
-- Sales registration with inventory updates
-- Sales reports with date filtering and client filtering
+## Caracteristicas
+- Gestión de productos
+- Gestión de clientes
+- Registro de ventas con actualización de inventario
 
-## Technologies
+## Tecnologías
 - C# / .NET Framework 4.8
 - WinForms
 - SQL Server
-- RDLC / Crystal Reports
 
 ## Author
 Adriana Loredo
+
+
