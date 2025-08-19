@@ -16,6 +16,25 @@ Aplicación de escritorio en C# (.NET WinForms) para el manejo de productos, cli
 - Pantalla de inicio: Contiene tres botones, Añadir productos, Añadir cliente y Añadir venta, cada uno se despliega dentro del contenedor de Inicio con sus respectivas funciones.
   ![Pantalla-principal](./Img/Capturas-de-pantalla/Pantalla-principal.png)
 
+- Pantalla de Productos:
+  - Contiene 5 cuadros de texto que solicitan de manera obligatoria los datos de: nombre, categoria y descripcion del producto.
+  - Sus 4 botones:
+    - Limpiar: Limpia todos los datos de los cuadros de texto
+    - Añadir producto: Guardar el productos con su nombre, categoria y descripcion en la base de datos.
+    - Eliminar producto: Del despliegue de los datos puedes seleccionar uno y se elimina
+    - Actualizar: Del despliegue de los datos seleccionas uno, cambias sus existencias, nombre, precio, cualquiera de los datos del cuadro de texto y se actualizan en la base de datos.
+  ![Pantalla-productos](./Img/Capturas-de-pantalla/Pantalla-productos.png)
+
+- Pantalla de Clientes:
+  - Contiene 5 cuadros de texto que solicitan de manera obligatoria los datos de: nombre, apellido y teléfono del producto.
+  - Sus 4 botones:
+    - Limpiar: Limpia todos los datos de los cuadros de texto
+    - Guardar: Guardar el pcliente con su nombre, apellido y teléfono en la base de datos (por motivos de privacidad no muestro los números de teléfono en la captura).
+    - Eliminar: Del despliegue de los datos seleccionas un cliente y se elimina.
+    - Actualizar: Del despliegue de los datos seleccionas uno, cambias cualquiera de los datos del cuadro de texto y se actualizan en la base de datos.
+  ![Pantalla-clientes](./Img/Capturas-de-pantalla/Pantalla-clientes.png)
+
+
 ## Author
 Adriana Loredo
 
