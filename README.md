@@ -14,7 +14,7 @@ Aplicación de escritorio en C# (.NET WinForms) para el manejo de productos, cli
 
 ## Pantallas y funcionalidades
 - Pantalla de inicio: Contiene tres botones, Añadir productos, Añadir cliente y Añadir venta, cada uno se despliega dentro del contenedor de Inicio con sus respectivas funciones.
-  ![pantalla-inicio](assets/funcion-añadir.gif)
+  ![Pantalla-principal](./Img/Capturas-de-pantalla/Pantalla-principal.png)
 
 ## Author
 Adriana Loredo
