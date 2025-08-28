@@ -107,5 +107,17 @@ namespace InventorySalesSystem
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // Oculta el formulario actual
+            this.Hide();
+
+            // Crea una nueva instancia del formulario de inicio
+            Form1 formularioInicio = new Form1();
+
+            // Muestra el formulario de inicio
+            formularioInicio.Show();
+        }
     }
 }
