@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormVentas));
             this.label1 = new System.Windows.Forms.Label();
             this.cbBoxCliente = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,6 +40,7 @@
             this.label5Total = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnMostrarVentas = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -141,7 +143,7 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRegistrar.Location = new System.Drawing.Point(555, 364);
+            this.btnRegistrar.Location = new System.Drawing.Point(158, 364);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(81, 33);
             this.btnRegistrar.TabIndex = 11;
@@ -155,10 +157,11 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.btnRegistrar, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnMostrarVentas, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.dgvVenta, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnAgregar, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnRegistrar, 0, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(77, 64);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
@@ -167,6 +170,17 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(794, 405);
             this.tableLayoutPanel1.TabIndex = 12;
+            // 
+            // btnMostrarVentas
+            // 
+            this.btnMostrarVentas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMostrarVentas.Location = new System.Drawing.Point(523, 364);
+            this.btnMostrarVentas.Name = "btnMostrarVentas";
+            this.btnMostrarVentas.Size = new System.Drawing.Size(144, 33);
+            this.btnMostrarVentas.TabIndex = 12;
+            this.btnMostrarVentas.Text = "Ventas registradas";
+            this.btnMostrarVentas.UseVisualStyleBackColor = true;
+            this.btnMostrarVentas.Click += new System.EventHandler(this.btnMostrarVentas_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -197,8 +211,9 @@
             this.ClientSize = new System.Drawing.Size(949, 563);
             this.Controls.Add(this.label5Total);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormVentas";
-            this.Text = "Ventas";
+            this.Text = "VENTAS";
             this.Load += new System.EventHandler(this.FormVentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVenta)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -222,5 +237,6 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Button btnMostrarVentas;
     }
 }

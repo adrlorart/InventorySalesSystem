@@ -19,6 +19,7 @@ namespace InventorySalesSystem
             InitializeComponent();
         }
 
+
         private void Button1_Click(object sender, EventArgs e)
         {
 
@@ -108,16 +109,21 @@ namespace InventorySalesSystem
 
         }
 
+        private Form activeForm = null;
         private void button4_Click(object sender, EventArgs e)
         {
-            // Oculta el formulario actual
-            this.Hide();
+            // Cierra el formulario hijo que esté activo en el panel
+            if (this.panelDesktop.Controls.Count > 0)
+            {
+                // Obtiene el primer (y único) control en el panel (el formulario hijo)
+                Form childForm = this.panelDesktop.Controls[0] as Form;
+                if (childForm != null)
+                {
+                    childForm.Close();
+                }
+            }
+            lblHome.Text = "INICIO"; // texto de pantalla de inicio
 
-            // Crea una nueva instancia del formulario de inicio
-            Form1 formularioInicio = new Form1();
-
-            // Muestra el formulario de inicio
-            formularioInicio.Show();
         }
     }
 }

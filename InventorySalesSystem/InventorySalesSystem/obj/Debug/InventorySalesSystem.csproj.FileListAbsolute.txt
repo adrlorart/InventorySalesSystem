@@ -12,3 +12,4 @@ C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventoryS
 C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\obj\Debug\InventorySalesSystem.FormClientes.resources
 C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\obj\Debug\InventorySalesSystem.FormProductos.resources
 C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\obj\Debug\InventorySalesSystem.FormVentas.resources
+C:\Users\adril\Documents\CV\InventorySalesSystem\InventorySalesSystem\InventorySalesSystem\obj\Debug\InventorySalesSystem.FormMuestraVentas.resources

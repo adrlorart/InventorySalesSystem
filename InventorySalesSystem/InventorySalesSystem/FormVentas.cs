@@ -159,5 +159,11 @@ namespace InventorySalesSystem
         {
 
         }
+
+        private void btnMostrarVentas_Click(object sender, EventArgs e)
+        {
+            FormMuestraVentas form = new FormMuestraVentas();
+            form.ShowDialog();
+        }
     }
 }
